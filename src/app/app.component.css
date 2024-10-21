@@ -1,0 +1,43 @@
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th {
+  background-color: #3f51b5;
+  color: white;
+  padding: 8px 16px;
+  text-align: left;
+}
+
+td {
+  padding: 8px 16px;
+}
+
+
+td:nth-child(2) {
+  font-weight: bold;
+}
+td > span {
+  padding: 4px 8px;
+  border-radius: 7px;
+}
+
+.status-completed {
+  background-color: #4caf50;
+  color: white;
+}
+
+.status-in-progress {
+  background-color: #2196f3;
+  color: white;
+}
+
+.status-not-started {
+  background-color: #f44336;
+  color: white;
+}
