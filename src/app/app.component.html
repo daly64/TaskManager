@@ -1,28 +1,3 @@
 <h1>{{ title }}</h1>
-
+<tasks-list/>
 <router-outlet></router-outlet>
-
-<ng-container *ngIf="tasks">
-  <table>
-    <thead>
-    <tr>
-      <th>ID</th>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Completed</th>
-      <th>Status</th>
-      <th>Due Date</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr *ngFor="let task of tasks">
-      <td>{{ task.id }}</td>
-      <td>{{ task.title }}</td>
-      <td>{{ task.description }}</td>
-      <td>{{ task.completed }}</td>
-      <td><span [ngClass]="'status-' + task.status">{{ task.status }}</span></td>
-      <td>{{ task.dueDate | date:'dd/MM/yyyy' }}</td>
-    </tr>
-    </tbody>
-  </table>
-</ng-container>

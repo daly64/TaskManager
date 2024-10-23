@@ -1,5 +1,5 @@
-import {TaskStatus} from './enums/TaskStatus';
-import { Task } from './interfaces/Task';
+import {TaskStatus} from './model/TaskStatus';
+import { Task } from './model/Task';
 
 // This is a fake database of tasks. It is just an array of tasks that are created here.
 export const fakeTasksDatabase: Task[] = Array.from({ length: 20 }, (_, i) => ({
